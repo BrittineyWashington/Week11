@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.box {
+    border: 5px double black; 
+    box-shadow: 0 0 0 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 25px;
+    width: 250px;
+    height: 250px;
+}
+
+
+#status {
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border: 5px dashed white;
+    border-radius: 3px;
+    font-size: larger;
+}
+
+.win {
+    animation: winAnimation ease-in-out 1s infinite; 
+}
+
+@keyframes winAnimation {
+    0% {background-color: #ecdd3c;}
+    100% {background-color: #8d06c7;}
+}
+
+
+img {
+    width: 200px;
+    height: 200px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
