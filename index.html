@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-danger">
 
-    <h2 class="text-center text-dark">TIC TAC TOE</h2>
+<!-- This is the example code for inserting an image into the webpage <body background="image_name.image_extension"></body> -->
 
+<body background="images/rednblueringLights-612x612.png">
+
+    <h1 class="bg-danger text-center text-white text-decoration-underline text-shadow fw-bold px-3 py-3 border">TIC TAC TOE</h1>
+        <!-- this is the status information -->
+        <div id="status">Play Now</div>
+
+    <!-- This creates the game board -->
 <div class="container">  
     <div data-index="0" class="box"></div>  
     <div data-index="1" class="box"></div>
@@ -23,16 +29,19 @@
     <div data-index="7" class="box"></div>
     <div data-index="8" class="box"></div>
 </div>
-  
-<div id="status">Play Now</div>
+
+<!-- this is the button to restart game and clear the board -->
+<div class="pt-3 pb-1">
 <button id="restart" class="btn btn-primary">Restart</button>
+</div>
 
-
+<!-- this adds the js file and jquery/bootstrap files to help with our interactiveness -->
 <script src="index.js"></script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-<footer class="text-center text-black-50 pb-3">
+<!-- this is just a personal touch that I want to keep practicing -->
+<footer class="text-center text-white text-bold pt-1 pb-3">
     <p>Brittiney Washington ©️2023</p>
 </footer>
 

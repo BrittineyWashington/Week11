@@ -7,6 +7,7 @@
 body {
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -14,12 +15,16 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 0px;
+    row-gap: 0em;
 }
 
 .box {
-    border: 5px double black; 
-    box-shadow: 0 0 0 2px black;
+    border: 5px double red; 
+    box-shadow: 0 0 0 2px blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,21 +33,37 @@ body {
     width: 250px;
     height: 250px;
 }
-
+.box:hover {
+    border: 5px dashed white;
+    box-shadow: 0 0 0 2px red;
+}
 
 #status {
     padding: 20px;
     font-size: 50px;
+    text-shadow: black;
     font-weight: 500;
-    color: black;
+    color: white;
     justify-content: center;
     align-items: center;
 }
 
 button{
-    border: 5px dashed white;
-    border-radius: 3px;
+    border: 5px dashed white; 
+    border-radius: circle;
+    box-shadow: 0 0 0 2px;
     font-size: larger;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 4px groove blue;  
+    box-shadow: 0 0 0 1px;
+}
+
+h1 {
+    text-shadow: 1px 1px .5px blue;
 }
 
 .win {
@@ -50,19 +71,9 @@ button{
 }
 
 @keyframes winAnimation {
-    0% {background-color: #ecdd3c;}
-    100% {background-color: #8d06c7;}
+    0% {background-color: lightskyblue}
+    100% {background-color: royalblue;}
 }
-
-
-img {
-    width: 200px;
-    height: 200px; 
-}
-
-
-
-
 
 
 
